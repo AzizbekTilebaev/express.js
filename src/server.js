@@ -17,5 +17,6 @@ app.use("/api/auth", router.auth)
 app.use("/api", auth, router.rt);
 
 
+module.exports = app;
 
 app.listen(PORT, () => console.log(`server ${PORT}inan start boldi`))
