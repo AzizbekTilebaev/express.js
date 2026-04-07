@@ -28,5 +28,8 @@ rt.get("/user/:id", uv.getById, uc.getUserById);
 rt.put("/user/update/:id", uc.updateUser)
 rt.delete("/user/delete/:id", uc.deleteUser)
 
+app.get('/', (req, res) => {
+  res.send('Server ishlayapti!');
+});
 
 module.exports = {rt, auth};
